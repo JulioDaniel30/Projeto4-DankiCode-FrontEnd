@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'Montserrat', sans-serif;
+}
+
+ul,li,a{
+  list-style: none;
+  text-decoration: none;
+  color: currentColor;
+}
+/* #region desktop*/
+
+/* #region header */
+
+.headerContainer{
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 25px;
+  height: 80px;
+  /* background-color: #444; */
+}
+.logo{
+  /* background: #000; */
+  height: 100%;
+}
+
+.menu{
+  margin-top: 5px;
+  margin-right: 40px;
+}
+
+.menu ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+  /* background: #666; */
+  font-size: 14px;
+  color: #b4b4b4;
+}
+
+/* #endregion header */
+
+
+.container{
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* #region mosaico*/
+
+.mosaico-wrapper{
+  display: flex;
+}
+
+.mosaico-single{
+  width: calc(100%/6);
+}
+
+.img-mosaico-single{
+  background-color: #ccc;
+  border: 5px solid white;
+  width: 100%;
+  padding-top: 100%;
+}
+/* #endregion mosaico*/
+
+/* #region serviços*/
+
+.servicos .container{
+  display: flex;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  top: -30px;
+  text-align: center;
+}
+
+.servicos .container .box-servico{
+  background-image: url(../images/icone_dente.png);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center calc(100% - 10px);
+  background-color: #576975;
+  width: 30%;
+  padding: 50px 2%;
+  color: white;
+}
+
+.servicos .container .box-servico:nth-of-type(2){
+  width: 40%;
+  padding: 80px 2%;
+  background-color: #688293;
+  background-image: none;
+}
+
+.servicos .container .box-servico h2{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.servicos .container .box-servico p{
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* #endregion serviços*/
+
+/* #region perfil*/
+
+.perfil .container{
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.perfil .img-perfil{
+  width: 40%;
+  height: 480px;
+  /* height: 100%; */
+  background-image: url(../images/img_perfil.png);
+  background-size: 100% 100%;
+}
+
+.perfil .text-perfil{
+  width: 60%;
+  /* margin-left: 40px; */
+  padding: 0 30px;
+  text-size-adjust: calc(100% -40px);
+}
+
+.perfil .text-perfil h2{
+  font-size: 18px;
+  color: #698293;
+  /* font-weight: normal; */
+}
+
+.perfil .text-perfil p{
+  font-size: 14px;
+  color: #4b4b4b;
+  margin-top: 8px;
+}
+
+/* #endregion perfil*/
+
+/* #region videos*/
+
+.videos .container{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  margin-top: 100px;
+}
+
+.videos .box-video{
+  width: 32.5%;
+  height: 270px;
+}
+.videos .box-video iframe{
+  width: 100%;
+  height: 100%;
+}
+
+/* #endregion videos*/
+
+/* #region tratamentos*/
+
+.tratamentos {
+  padding: 70px 0;
+}
+
+.tratamentos > h2{
+  font-size: 18px;
+  color: #698293;
+  text-align: center;
+}
+
+.tratamentos .container{
+  display: flex;
+  gap: 10px;
+  padding: 80px 0;
+}
+
+.tratamentos .tratamento-wrapper{
+  width: 33.33%;
+  padding: 10px 10px;
+}
+
+.tratamentos .tratamento-single{
+  padding: 20px;
+}
+
+.tratamentos .tratamento-single h2{
+  font-size: 18px;
+  color: #737373;
+
+}
+
+.tratamentos .tratamento-single p{
+  font-size: 13px;
+  color: #b4b4b4;
+  padding: 10px 0;
+  
+}
+
+/* #endregion tratamentos*/
+
+/* #region depoimentos*/
+
+.depoimentos >h2{
+  color: #698293;
+  font-size: 18px;
+  text-align: center;
+}
+
+.depoimentos .container{
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.depoimentos .depoimento-single{
+  width: 33.33%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.depoimentos .depoimento-single q{
+  color: #b4b4b4;
+  font-size: 15px;
+}
+
+.depoimentos .depoimento-single .depoimento-nome{
+  padding: 19px 0;
+}
+
+.depoimentos .depoimento-single .depoimento-nome img{
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.depoimentos .depoimento-single .depoimento-nome span{
+  color: #b4b4b4;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+/* #endregion depoimentos*/
+
+/* #region social*/
+
+.social{
+  font-size: 13px;
+}
+
+.instagram-chamada{
+  background-color: #98a5ae;
+  padding: 40px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.instagram-chamada p{
+  padding: 10px 0;
+  line-height: 23px;
+  color: white;
+}
+
+.mosaico-social{
+  display: flex;
+}
+
+.social .img-mosaico-single-social{
+  width: calc(100%/9);
+  padding-top: calc(100%/9);
+  background-color: rgb(210,210,210);
+  border: 6px solid white;
+
+}
+
+.facebook-chamada{
+  background-color: #576975;
+  padding: 40px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.facebook-chamada p{
+  padding: 10px 0;
+  line-height: 23px;
+  color: white;
+}
+
+/* #endregion social*/
+
+/* #region contato*/
+
+.contato{
+  padding: 60px 2%;
+}
+
+.contato > h2{
+    color: #698293;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contato form{
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+.contato form span{
+  color: #b4b4b4;
+  font-size: 15px;
+}
+
+.contato .form-wrapper{
+  padding: 0 10px;
+  margin-top:10px;
+}
+.contato .form-wrapper input{
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 9px;
+  margin-top: 8px;
+  border: 1px solid #dadada;
+}
+
+.contato .form-wrapper input[type=submit]{
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  background-color: #688293;
+  color: white;
+  cursor: pointer;
+  border: 0;
+}
+
+.contato .form-wrapper textarea{
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px;
+  height: 121px;
+  resize: none;
+  border: 1px solid #dadada;
+}
+
+.contato .form-wrapper-more{
+  display: flex;
+  gap: 30px;
+}
+
+.contato .form-wrapper-single{
+  width: 50%;
+}
+.contato .form-wrapper-single input{
+  width: 100%;
+}
+
+/* #endregion contato*/
+
+/* #region footer*/
+
+.footerContainer{
+  background-color: #688293;
+  padding: 40px 2%;
+}
+
+.footerContainer .container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerContainer .footer-block{
+  color: white;
+}
+
+.footerContainer .footer-block h2{font-size: 18px;font-weight: normal;}
+.footerContainer .footer-block p{font-size: 14px;margin-top: 8px;}
+
+/* #endregion footer*/
+
+/* #endregion desktop*/
