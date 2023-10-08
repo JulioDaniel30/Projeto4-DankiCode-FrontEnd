@@ -12,6 +12,13 @@ ul,li,a{
   text-decoration: none;
   color: currentColor;
 }
+
+.container{
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /* #region desktop*/
 
 /* #region header */
@@ -47,13 +54,6 @@ ul,li,a{
 }
 
 /* #endregion header */
-
-
-.container{
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
-}
 
 /* #region mosaico*/
 
@@ -400,3 +400,55 @@ ul,li,a{
 /* #endregion footer*/
 
 /* #endregion desktop*/
+
+/* #region mobile*/
+@media (width < 800px) {
+  /* #region Header*/
+  .headerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .headerContainer .menu{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .headerContainer .menu ul{
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  /* #endregion Header*/
+  
+  /* #region mosaico*/
+  /* #endregion mosaico*/
+
+  /* #region serviços*/
+  /* #endregion serviços*/
+
+  /* #region perfil*/
+  /* #endregion perfil*/
+
+  /* #region videos*/
+  /* #endregion videos*/
+
+  /* #region tratamentos*/
+  /* #endregion tratamentos*/
+
+  /* #region depoimentos*/
+  /* #endregion depoimentos*/
+
+  /* #region social*/
+  /* #endregion social*/
+
+  /* #region contato*/
+  /* #endregion contato*/
+
+  /* #region footer*/
+  /* #endregion footer*/
+}/*width < 800px*/
+
+
+
+/* #endregion mobile*/
