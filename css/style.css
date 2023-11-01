@@ -284,11 +284,18 @@ ul,li,a{
 
 .mosaico-social{
   display: flex;
+  flex-wrap: wrap;
+}
+
+.social .mosaico-wropper-social{
+  width: calc(100%/3);
+  display: flex;
+  
 }
 
 .social .img-mosaico-single-social{
-  width: calc(100%/9);
-  padding-top: calc(100%/9);
+  width: calc(100%/3);
+  padding-top: calc(100%/3);
   background-color: rgb(210,210,210);
   border: 6px solid white;
 
@@ -378,24 +385,31 @@ ul,li,a{
 
 /* #endregion contato*/
 
-/* #region footer*/
+/* #region footer*/ 
 
 .footerContainer{
   background-color: #688293;
   padding: 40px 2%;
+  width: 100%;
 }
 
 .footerContainer .container{
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 .footerContainer .footer-block{
   color: white;
+  padding: 0 2%;
 }
 
 .footerContainer .footer-block h2{font-size: 18px;font-weight: normal;}
 .footerContainer .footer-block p{font-size: 14px;margin-top: 8px;}
+
+.footerContainer .footer-block span{
+  text-wrap: nowrap;
+}
 
 /* #endregion footer*/
 
@@ -425,12 +439,60 @@ ul,li,a{
   /* #endregion mosaico*/
 
   /* #region serviços*/
+  .servicos .container{
+    flex-direction: column;
+    top:0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .servicos .container .box-servico,
+  .servicos .container .box-servico:nth-child(2){
+    
+    width: 80%;
+    min-height: 100px;
+    padding: 50px 2%;
+  }
   /* #endregion serviços*/
 
   /* #region perfil*/
+
+  .perfil .container{
+    flex-direction: column;
+  }
+
+  .perfil .img-perfil,
+  .perfil .text-perfil{
+    width: 70%;
+  }
+
+  .perfil .img-perfil{
+    width: 65%;
+    min-height: 480px;
+    height: 600px;
+    margin-bottom: 20px;
+  }
+
   /* #endregion perfil*/
 
   /* #region videos*/
+
+  .videos .container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .videos .box-video{
+    width: 80%;
+    /* height: 270px; */
+    padding: 1% 0;
+    margin-top: 0px;
+    
+  }
+  
+
   /* #endregion videos*/
 
   /* #region tratamentos*/
@@ -440,6 +502,17 @@ ul,li,a{
   /* #endregion depoimentos*/
 
   /* #region social*/
+  .social .mosaico-social{
+    justify-content: center;
+    
+  }
+  .social .mosaico-wropper-social{
+    width: 100%;
+  }
+  .social .mosaico-wropper-social:nth-child(2),
+  .social .mosaico-wropper-social:nth-child(3){
+    display: none;
+  }
   /* #endregion social*/
 
   /* #region contato*/
